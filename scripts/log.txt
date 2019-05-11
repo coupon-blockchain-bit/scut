@@ -1,0 +1,2 @@
+[34m2019-04-14 06:19:29.643 UTC [channelCmd] InitCmdFactory -> INFO 001[0m Endorser and orderer connections initialized
+Error: channel create configuration tx file not found open ./channel-artifacts/channel.tx: no such file or directory

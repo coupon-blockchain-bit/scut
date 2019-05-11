@@ -1,0 +1,49 @@
+#!/bin/bash
+
+function cleanup ()
+    {
+
+
+      CONTAINER_IDS=$(docker ps -aq)
+echo
+      if [ -z "$CONTAINER_IDS" -o "$CONTAINER_IDS" = " " ]; then
+              echo "========== No containers available for deletion =========="
+      else
+              docker rm -f $CONTAINER_IDS
+      fi
+echo
+
+
+
+
+      DOCKER_IMAGE_IDS=$(docker images | grep "dev\|none\|test-vp\|peer[0-9]-" | awk '{print $3}')
+      echo
+      if [ -z "$DOCKER_IMAGE_IDS" -o "$DOCKER_IMAGE_IDS" = " " ]; then
+              echo "========== No images available for deletion ==========="
+      else
+              docker rmi -f $DOCKER_IMAGE_IDS
+      fi
+      echo
+
+
+    }
+sudo zypper install java
+
+cleanup
+
+docker-compose up -d
+
+sleep 15
+
+java -cp blockchain-client.jar org.app.network.CreateChannel
+
+
+java -cp blockchain-client.jar org.app.network.DeployInstantiateChaincode
+
+
+java -cp blockchain-client.jar org.app.user.RegisterEnrollUser
+
+java -cp blockchain-client.jar org.app.chaincode.invocation.InvokeChaincode
+
+
+java -cp blockchain-client.jar org.app.chaincode.invocation.QueryChaincode
