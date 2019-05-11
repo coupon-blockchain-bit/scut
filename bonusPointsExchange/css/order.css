@@ -1,0 +1,200 @@
+@charset "utf-8";
+/****主体****/
+#orderNav,#orderContent{
+	float:left;
+	}
+#orderNav{
+	width: 250px;
+	height: 100%;
+	}
+#orderContent{
+	margin-left:90px;
+	width:700px;
+	height:100%;
+	}
+#div1{
+	 display:block;
+	 }
+#div2,#div3{
+	display:none;
+	}
+
+/*****发布订单*****/
+.releaseOrder,.exchangeOrder,.referenceOrder{
+	margin: 20px auto;
+	min-height: 500px;
+}
+.exchangeOrder{
+	width:800px;}
+/**** releaseOrder css******/
+.releaseOrder table {
+	font-size: 20px;
+	border-collapse: separate;
+	border-spacing: 10px;
+}
+.releaseOrder td {
+line-height:42px;
+}
+.releaseOrder input {
+	line-height: 24px;
+}
+.releaseOrder input, .releaseOrder select {
+	width: 300px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+.releaseOrder #submit,.releaseOrder #reset,.exchangeOrder #exchange{   
+/***  提交按钮样式 ******/
+	width:120px;
+	text-align:center;
+	font-size: 18px;
+	color: #000000;
+	padding: 3px 10px;
+	/*****
+	background: -moz-linear-gradient(
+		top,
+		#ff9c9c 0%,
+		#ff0000);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#ff9c9c),
+		to(#ff0000));  ****/
+    background:#FF4646;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 1px solid #ffffff;
+	}
+ 
+ /*** exchange order list***/
+#order-list{
+     margin-top:30px;	
+	}
+#order-list ul {
+	list-style-type: none;
+}
+.order-info ul li {
+	float: left;
+}
+.shop-logo {
+	width: 80px;
+	text-align:center;
+}
+
+.shop-logo img, .myOrder-info img{
+	width:60px;
+	height:60px;
+	overflow:hidden;
+	}
+/***
+.order-info table {
+	width: 250px;
+	overflow: hidden;
+}   ****/
+.exchangeOrder-info table{
+	width:200px;
+	overflow: hidden;
+}
+.operate{
+	width:100px;
+	min-height:80px;
+	float:right;
+	}
+.submitBtn {
+	text-align:center;
+	font-size: 18px;
+	color: #000000;
+	padding: 3px 10px;
+	background: -moz-linear-gradient(
+		top,
+		#ff9c9c 0%,
+		#ff0000);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#ff9c9c),
+		to(#ff0000));
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 1px solid #ffffff;
+}
+
+/**** reference order*****/
+.referenceOrder{
+	width:800px;
+}
+.referenceInfo{
+	border:1px solid black;
+	margin-top:20px;
+	}
+.referenceInfo table{
+	width:800px;
+	margin:15px auto;
+	padding:0px;
+	border-spacing:0px;	
+	}
+.referenceInfo table td{
+	font-size:24px;
+	text-align:center;
+	}
+.table-td-img{
+	width:20%;
+	}
+.table-td-img img{
+	width:100px;
+	height:100px;
+	overflow:hidden;
+	}
+/*****订单中心*******/
+#orderNav{
+	width:180px;
+	margin-top:20px;	
+	border:1px black solid;
+	-moz-border-radius: 10px; 
+    -webkit-border-radius: 10px; 
+    border-radius:10px; 
+	 	}
+#orderNav p{
+	text-indent:2em;
+	line-height:28px;
+	font-family:Microsoft YaHei;
+	}
+#orderNav h3{
+	margin:10px 0 7px;
+	font-size:24px;
+	font-weight:thick;
+	background-color:#EDEDED;
+	text-indent:1em;
+	
+}
+.myOrder{
+	height:80px;
+	margin-top:10px;
+	margin-bottom:10px;
+	}
+.myOrder ul{
+	list-style-type:none;
+	}
+.myOrder ul li {
+	float: left;
+	}
+.myOrder-info table {
+	width: 200px;
+	overflow: hidden;
+}
+#search table,#search-result table{
+	width:100%;
+	margin-bottom:10px;
+	margin-top:10px;
+	}
+	
+#search table tr{
+	text-align:left;
+	}
+#search-result table tr{
+	height:80px;
+	}
+#search-result input{
+	vertical-align:middle;
+}

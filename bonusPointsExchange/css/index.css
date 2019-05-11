@@ -1,0 +1,102 @@
+@charset "utf-8";
+.index {
+	margin: 10px auto;
+	width: 1000px;
+	min-height: 500px;
+}
+.index1, .index2 {
+	float: left;
+	overflow: hidden;
+}
+.index1 {
+	margin-top:24px;
+	width: 25%;
+}
+.index1 ul {
+	width: 180px;
+}
+.index2 {
+	width: 75%;
+}
+
+.index1 ul, #shop-list ul, #order-list ul {
+	list-style-type: none;
+}
+/*****index1 navigation ******/
+.index1 ul{
+	border: 2px solid #000000;
+    -moz-border-radius: 15px; 
+    -webkit-border-radius: 15px; 
+    border-radius:15px;          
+	}
+.index1 ul li{
+	font-size:24px;
+	text-align:center;
+	border-bottom:1px solid black;
+	overflow:hidden;
+	}
+/***index1 end ***/
+.more{
+	float:right;
+}
+/*** shop list***/
+#shop-list{
+	margin-bottom:30px;
+	}
+#shop-list ul li {
+	width: 20%;
+	float: left;
+}
+#shop-list img{
+	width:100px;
+	height:100px;
+	overflow:hidden;
+	}
+.shopName{
+	margin-left:10px;
+	font-size:18px;
+	color:black;
+	}
+/*** order list***/
+.order-info ul li {
+	float: left;
+}
+.shop-logo {
+	width: 100PX;
+	text-align: left;
+}
+.shop-logo img{
+	width:60px;
+	height:60px;
+	overflow:hidden;
+	}
+.info {
+	width: 60%;
+	align: center;
+}
+.operate{
+	width:20%;
+	min-height:80px;
+	}
+.submitBtn {
+	text-align:center;
+	font-size: 18px;
+	color: #000000;
+	padding: 3px 10px;
+	background: -moz-linear-gradient(
+		top,
+		#ff9c9c 0%,
+		#ff0000);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#ff9c9c),
+		to(#ff0000));
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 1px solid #ffffff;
+}
+.info table {
+	width: 400px;
+	overflow: hidden;
+}

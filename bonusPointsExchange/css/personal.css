@@ -1,0 +1,191 @@
+@charset "utf-8";
+.personal{
+	margin: 10px auto;
+	width: 1000px;
+	min-height: 500px;
+	clear: both;
+	}
+.personal table tr{
+	line-height:42px;
+	}
+.span7,.span8{
+	display: inline;
+	float: left;
+	overflow: hidden;
+	}
+.shop-logo img{
+	width:60px;
+	height:60px;
+	overflow:hidden;
+	}
+/******* personal.jsp navigation css************/
+.span7{
+	width:25%;
+	}
+.span8{
+	margin-left:50px;
+	width:70%;
+	}
+#Accordion1{
+	width:180px;
+	border:1px solid grey;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+.nav{
+	margin-top:10px;
+	height:260px;
+	list-style-type: none;
+	}
+.nav li{
+	line-height:30px;
+	text-height:30px;
+	text-align:center;
+	margin-top:10px;
+	border-bottom:white 3px soild;
+	background-color: #CCD7FF;
+	}
+.nav h3{
+	margin:10px 0 7px;
+	font-size:20px;
+	font-weight:normal;
+	background-color:#EDEDED;
+	text-indent:1em;
+	
+}
+.nav p{
+	text-indent:2em;
+	line-height:24px;
+	font-family:Microsoft YaHei;	
+}
+.index,.index p{
+	margin:0;
+	padding:0;
+	}
+.index p a:link{
+	color:black;
+	}	
+.index p a:hover{
+	color:red;
+	}
+.index p a:active{
+	color:green;
+	}
+/*********************/
+#div2,#div3,#div4,#div5,#div6{
+	display:none;
+	}
+#div1,#div2,#div3,#div4,#div5,#div6{
+	margin-left:30px;
+	}
+#div1 table,#div2 table,#div3 table,#div4 table,#div5 table,#div6 table{
+	font-size: 20px;
+	margin-top: 10px;
+	margin-left:10px;
+	cellspacing: 40px;
+	border-collapse: separate;
+	border-spacing: 10px；
+	
+}
+#div1 table td,#div2 table td,#div3 table td,#div4 table td{
+	width:200px;
+	height:36px;
+	text-align: left;
+}
+#div5 table td,#div6 table td{
+	width:300px;
+	height:36px;
+	text-align:left;
+	}
+input{
+	font-size:20px;
+	}
+#submit{
+	clear: both;
+	}
+/***
+.submitBtn {
+	text-align:center;
+	font-size: 18px;
+	color: #000000;
+	padding: 3px 10px;
+	background: -moz-linear-gradient(
+		top,
+		#ff9c9c 0%,
+		#ff0000);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#ff9c9c),
+		to(#ff0000));
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 1px solid #ffffff;
+}
+****/
+.normal-font{
+	font-size:20px;	
+}
+.inputNum{
+	border:none;
+	}
+/***
+.no-border{
+	border:none;
+	}  *****/
+.buttonStyle1 {
+	align:center;
+	font-size: 18px;
+	color: black;
+	padding: 3px 10px;
+	background: -moz-linear-gradient(
+		top,
+		#ffffff 0%,
+		#ffffff 50%,
+		#d6d6d6);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#ffffff),
+		color-stop(0.50, #ffffff),
+		to(#d6d6d6));
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 3px solid #dfdfe3;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 3px rgba(255,255,255,1);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 3px rgba(255,255,255,1);
+	/*box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 3px rgba(255,255,255,1);*/
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.1),
+		0px 1px 0px rgba(255,255,255,1);
+}
+
+#imageUpload span,#imageUpload input{
+	float: left;
+	}
+.opacity{
+filter:alpha(opacity=30);
+opacity:.3;
+}
+/****  div5 ***********/
+#div5 table{
+	border:1px solid grey;
+}
+.bindBtn{
+	width:20%;
+}
+/************bindshop page**********/
+.bind-form table{
+	margin:10px auto;	
+	}
+.bind-form table td{
+		line-height:42px;
+		font-size:24px;
+	}

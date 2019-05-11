@@ -1,0 +1,10 @@
+@charset "utf-8";
+.footer {
+	dispaly: block;
+}
+.footer p {
+	font-size: 16px;
+	font-family: "Microsoft YaHei";
+	magin: 5px auto;
+	text-align: center;
+}

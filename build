@@ -1,0 +1,13 @@
+#!/bin/bash
+
+cd bonusPointsExchange
+fastjar -cvf bonusPointsExchange.war *
+
+cd ..
+docker rm -f bonus
+
+docker rmi -f scut_bonuswar scut_bonus_war
+
+docker-compose up -d
+
+cd ..

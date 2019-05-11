@@ -1,0 +1,107 @@
+@charset "utf-8";
+body, h1, h2, h3, h4, h5, div, p, img {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+.regist-frame {
+	width: 1000px;
+	min-height: 380px;
+	margin: auto auto;
+	border: grey 1px solid;
+}
+/**
+.title {
+	height: 24px;
+	line-height: 24px;
+	color: #3164af;
+	font-family: "Microsoft YaHei";
+	font-size: 24px;
+	font-weight: normal;
+	text-align: left;
+	margin: 5px 0;
+	border-bottom: grey 1px dotted;
+}
+.title1 {
+	color: #d8d8d8;
+	font-size: 18px
+}
+*/
+.span5, .span6 {
+	display: inline;
+	overflow: hidden;
+}
+.span5 {
+	float: left;
+}
+.span6 {
+	float: right;
+	
+}
+form {
+	height: inherit;
+	width: 400px;
+}
+.span5 table, .span6 table {
+	font-size: 24px;
+	margin: 10px 10px;
+	cellspacing: 20px;
+	border-collapse: separate;
+	border-spacing: 10px;
+}
+.span5 table td {
+	text-align: right;
+    width:150px;
+}
+/*****
+#submit, #reset {
+	height: 40px;
+	border: grey 1px solid;
+	background: #FF3D40;
+	font-size: 18px;
+}   ****/
+.tips {
+	width: 400px;
+	float: right;
+	margin-top:30px;
+	margin-right:5px;
+	font-size:18px;
+	background-color:pink;
+}
+.tips-font1{
+	font-size: 24px;
+	color:red;
+	}
+.link a{
+	font-color:red;
+	}
+/********* 忘记密码*********/
+.repsw-form{
+	width:1000px;
+	min-height:500px;
+	margin:auto;
+}
+.retrieve{
+	width:700px;
+	margin-left:270px;
+	margin-top:40px;	
+	}
+
+#step1{
+	display:block;
+	}
+#step2{
+	display:block;
+	}
+#step-title1{
+	color:#3164af;
+	font-size: 18px
+	}
+#step-title2{
+	color: #d8d8d8;
+	font-size: 18px
+	}
+#step1 table tr,#step2 table tr{
+	line-height:42px;
+	}
+/*******************/

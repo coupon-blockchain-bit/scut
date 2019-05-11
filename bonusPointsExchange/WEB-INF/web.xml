@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <display-name></display-name>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ActionServlet</servlet-name>
+    <servlet-class>com.bit.bonusPointsExchange.controller.ActionServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ActivateAccountServlet</servlet-name>
+    <servlet-class>com.bit.bonusPointsExchange.controller.ActivateAccountServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserPointToplatformServlet</servlet-name>
+    <servlet-class>com.bit.bonusPointsExchange.controller.UserPointToplatformServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PlatformToUserServlet</servlet-name>
+    <servlet-class>com.bit.bonusPointsExchange.controller.PlatformToUserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>QueryUserPoints</servlet-name>
+    <servlet-class>com.bit.bonusPointsExchange.controller.QueryUserPoints</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>QueryPointsAtPlatform</servlet-name>
+    <servlet-class>com.bit.bonusPointsExchange.controller.QueryPointsAtPlatform</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShopLoginServlet</servlet-name>
+    <servlet-class>com.bit.bonusPointsExchange.controller.ShopLoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShopChangeInfo</servlet-name>
+    <servlet-class>com.bit.bonusPointsExchange.controller.ShopChangeInfo</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShopChangePwdServlet</servlet-name>
+    <servlet-class>com.bit.bonusPointsExchange.controller.ShopChangePwdServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RegistShopServlet</servlet-name>
+    <servlet-class>com.bit.bonusPointsExchange.controller.RegistShopServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CheckShopName</servlet-name>
+    <servlet-class>com.bit.bonusPointsExchange.controller.CheckShopName</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>QueryShopInfoServlet</servlet-name>
+    <servlet-class>com.bit.bonusPointsExchange.controller.QueryShopInfoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>BindShopQueryInfoServlet</servlet-name>
+    <servlet-class>com.bit.bonusPointsExchange.controller.BindShopQueryInfoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>BindShopServlet</servlet-name>
+    <servlet-class>com.bit.bonusPointsExchange.controller.BindShopServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CheckIsBindedServlet</servlet-name>
+    <servlet-class>com.bit.bonusPointsExchange.controller.CheckIsBindedServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>QueryBindInfo</servlet-name>
+    <servlet-class>com.bit.bonusPointsExchange.controller.QueryBindInfo</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>QueryBindedShopNameServlet</servlet-name>
+    <servlet-class>com.bit.bonusPointsExchange.controller.QueryBindedShopNameServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>QueryOrderInfo</servlet-name>
+    <servlet-class>com.bit.bonusPointsExchange.controller.QueryOrderInfo</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ChangeOrderStaServlet</servlet-name>
+    <servlet-class>com.bit.bonusPointsExchange.controller.ChangeOrderStaServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ReferencePriceServlet</servlet-name>
+    <servlet-class>com.bit.bonusPointsExchange.controller.ReferencePriceServlet</servlet-class>
+  </servlet>
+   <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>QueryLatestOrder</servlet-name>
+    <servlet-class>com.bit.bonusPointsExchange.controller.QueryLatestOrder</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FinishLatestOrder</servlet-name>
+    <servlet-class>com.bit.bonusPointsExchange.controller.FinishLatestOrder</servlet-class>
+ </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UploadIconServlet</servlet-name>
+    <servlet-class>com.bit.bonusPointsExchange.controller.UploadIconServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>QueryValidPointSerlvet</servlet-name>
+    <servlet-class>com.bit.bonusPointsExchange.controller.QueryValidPointSerlvet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PageForwardServlet</servlet-name>
+    <servlet-class>com.bit.bonusPointsExchange.controller.PageForwardServlet</servlet-class>
+  </servlet>
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>ActionServlet</servlet-name>
+    <url-pattern>/actionServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ActivateAccountServlet</servlet-name>
+    <url-pattern>/activateAccountServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserPointToplatformServlet</servlet-name>
+    <url-pattern>/UserPointToplatformServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PlatformToUserServlet</servlet-name>
+    <url-pattern>/PlatformToUserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>QueryUserPoints</servlet-name>
+    <url-pattern>/QueryUserPoints</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>QueryPointsAtPlatform</servlet-name>
+    <url-pattern>/QueryPointsAtPlatform</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShopLoginServlet</servlet-name>
+    <url-pattern>/ShopLoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShopChangeInfo</servlet-name>
+    <url-pattern>/ShopChangeInfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShopChangePwdServlet</servlet-name>
+    <url-pattern>/ShopChangePwdServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RegistShopServlet</servlet-name>
+    <url-pattern>/RegistShopServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CheckShopName</servlet-name>
+    <url-pattern>/CheckShopName</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>QueryShopInfoServlet</servlet-name>
+    <url-pattern>/QueryShopInfoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BindShopQueryInfoServlet</servlet-name>
+    <url-pattern>/BindShopQueryInfoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BindShopServlet</servlet-name>
+    <url-pattern>/BindShopServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CheckIsBindedServlet</servlet-name>
+    <url-pattern>/CheckIsBindedServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>QueryBindInfo</servlet-name>
+    <url-pattern>/QueryBindInfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>QueryBindedShopNameServlet</servlet-name>
+    <url-pattern>/QueryBindedShopNameServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>QueryOrderInfo</servlet-name>
+    <url-pattern>/QueryOrderInfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChangeOrderStaServlet</servlet-name>
+    <url-pattern>/ChangeOrderStaServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ReferencePriceServlet</servlet-name>
+    <url-pattern>/ReferencePriceServlet</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>QueryLatestOrder</servlet-name>
+    <url-pattern>/QueryLatestOrder</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FinishLatestOrder</servlet-name>
+    <url-pattern>/FinishLatestOrder</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UploadIconServlet</servlet-name>
+    <url-pattern>/UploadIconServlet</url-pattern>
+  </servlet-mapping>
+      <servlet-mapping>
+    <servlet-name>QueryValidPointSerlvet</servlet-name>
+    <url-pattern>/QueryValidPointSerlvet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PageForwardServlet</servlet-name>
+    <url-pattern>/pageForwardServlet</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
