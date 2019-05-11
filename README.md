@@ -1,9 +1,12 @@
+Coupon exchange project on LinuxONE
+
 # It's a demo of academic project, airline coupon exhange platform based on hyperledger fabric.
+You need request access to the LinuxONE Community Cloud, set up the webapp by scripts. Request access to LinuxONE Community Cloud, please refer to: https://linuxone.cloud.marist.edu/cloud/#/register?flag=vm
+
 
 Usage:
 
-
-please use this repo at linuxONE community cloud VM, it's easier, login your VM,then start 
+Once you log in Community Cloud vm, following the steps below:
 
 1 git clone https://github.com/coupon-blockchain-bit/scut.git
 
