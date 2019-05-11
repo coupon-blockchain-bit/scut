@@ -2,6 +2,9 @@
 
 Usage:
 
+
+please use this repo at linuxONE community cloud VM, it's easier, login your VM,then start 
+
 1 git clone https://github.com/coupon-blockchain-bit/scut.git
 
 2 cd scut
