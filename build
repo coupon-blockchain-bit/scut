@@ -10,3 +10,4 @@ docker rmi -f scut_bonuswar scut_bonus_war
 
 docker-compose up -d
 
+sleep 15
