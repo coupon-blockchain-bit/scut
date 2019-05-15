@@ -4,7 +4,7 @@ function cleanup ()
     {
 
 
-      CONTAINER_IDS=$(docker ps -aq)
+      CONTAINER_IDS=$(docker ps | grep "dev\|bonus\|example\|mysql\|ca_peer" | awk '{print $1}')
 echo
       if [ -z "$CONTAINER_IDS" -o "$CONTAINER_IDS" = " " ]; then
               echo "========== No containers available for deletion =========="
@@ -14,9 +14,7 @@ echo
 echo
 
 
-
-
-      DOCKER_IMAGE_IDS=$(docker images | grep "war\|dev\|none\|test-vp\|peer[0-9]-" | awk '{print $3}')
+      DOCKER_IMAGE_IDS=$(docker images | grep "war\|dev" | awk '{print $3}')
       echo
       if [ -z "$DOCKER_IMAGE_IDS" -o "$DOCKER_IMAGE_IDS" = " " ]; then
               echo "========== No images available for deletion ==========="
@@ -25,15 +23,18 @@ echo
       fi
       echo
 
-
     }
-sudo zypper install java
+
 
 cleanup
+
+docker volume create mysql-db
 
 ./build
 
 sleep 15
+
+docker exec -it mysql bash -c "mysql -uroot -proot bonusbitExchange < bonuspointsexchange.sql"
 
 java -cp blockchain-client.jar org.app.network.CreateChannel
 
@@ -44,6 +45,3 @@ java -cp blockchain-client.jar org.app.network.DeployInstantiateChaincode
 java -cp blockchain-client.jar org.app.user.RegisterEnrollUser
 
 java -cp blockchain-client.jar org.app.chaincode.invocation.InvokeChaincode
-
-
-java -cp blockchain-client.jar org.app.chaincode.invocation.QueryChaincode

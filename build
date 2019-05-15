@@ -1,13 +1,32 @@
 #!/bin/bash
 
+cp blockchain-client.jar  bonusPointsExchange/WEB-INF/lib/
+
+
 cd bonusPointsExchange
-fastjar -cvf bonusPointsExchange.war *
 
-cd ..
-docker rm -f bonus
 
-docker rmi -f scut_bonuswar scut_bonus_war
+OSTYPE="`arch`"
 
-docker-compose up -d
+if [[ "$OSTYPE" == "s390x" ]]; then
 
-sleep 15
+  sudo zypper install java
+  fastjar -cvf bonusPointsExchange.war *
+  cd ..
+  docker rm -f bonus
+  docker rmi -f scut_bonuswar scut_bonus_war
+  docker-compose -f docker-compose390.yml up -d
+
+else
+  jar -cvf bonusPointsExchange.war *
+  cd ..
+  docker rm -f bonus
+  docker rmi -f scut_bonuswar scut_bonus_war
+  docker-compose up -d
+fi
+
+#fastjar -cvf bonusPointsExchange.war *
+#cd ..
+#docker rm -f bonus
+#docker rmi -f scut_bonuswar scut_bonus_war
+#docker-compose up -d

@@ -164,4 +164,25 @@ services:
     ports:
       - "8080:8080"
       - "3306:3306"
-    network_mode: "host"
+    depends_on:
+      -   mysql
+
+
+  mysql:
+    image: mariadb
+    container_name: mysql
+    volumes:
+        - mysql-db:/var/lib/mysql
+    environment:
+        MYSQL_ROOT_PASSWORD: root
+        MYSQL_DATABASE: bonusbitExchange
+    working_dir: /
+    volumes:
+        - ./database/my.cnf:/etc/mysql/my.cnf
+        - ./database/bonuspointsexchange.sql:/bonuspointsexchange.sql
+
+
+
+
+volumes:
+  mysql-db:
