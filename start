@@ -32,9 +32,7 @@ docker volume create mysql-db
 
 ./build
 
-sleep 15
 
-docker exec -it mysql bash -c "mysql -uroot -proot bonusbitExchange < bonuspointsexchange.sql"
 
 java -cp blockchain-client.jar org.app.network.CreateChannel
 

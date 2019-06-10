@@ -165,6 +165,13 @@ services:
       - "8080:8080"
       - "3306:3306"
     depends_on:
+      - orderer.example.com
+      - peer0.org1.example.com
+      - peer1.org1.example.com
+      - peer0.org2.example.com
+      - peer1.org2.example.com
+      -   ca.org1.example.com
+      -   ca.org2.example.com      
       -   mysql
 
 
@@ -179,8 +186,7 @@ services:
     working_dir: /
     volumes:
         - ./database/my.cnf:/etc/mysql/my.cnf
-        - ./database/bonuspointsexchange.sql:/bonuspointsexchange.sql
-
+        - ./database/schema:/docker-entrypoint-initdb.d/:ro
 
 
 

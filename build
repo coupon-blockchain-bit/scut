@@ -18,15 +18,10 @@ if [[ "$OSTYPE" == "s390x" ]]; then
   docker-compose -f docker-compose390.yml up -d
 
 else
-  jar -cvf bonusPointsExchange.war *
+#  jar -cvf bonusPointsExchange.war *
   cd ..
   docker rm -f bonus
   docker rmi -f scut_bonuswar scut_bonus_war
   docker-compose up -d
 fi
 
-#fastjar -cvf bonusPointsExchange.war *
-#cd ..
-#docker rm -f bonus
-#docker rmi -f scut_bonuswar scut_bonus_war
-#docker-compose up -d
