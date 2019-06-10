@@ -29,7 +29,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <ul>
       <li>Bank</li>
       <li>Airline</li>
-      <li>Suprmarket</li>
+      <li>Supermarket</li>
       <li>Restaurant</li>
       <li>MegaMalls</li>
       <li style="border:none">Other</li>

@@ -17,4 +17,4 @@ To change the UI, please:
 
 4 ./build 
 
-5 check the change on XXX.XXX.XXX.XXX:8080/bonusPointsExchange/ in the browser
+5 check the change on http://localhost:8080/bonusPointsExchange/ in the browser
