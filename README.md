@@ -1,7 +1,8 @@
 Coupon exchange project on LinuxONE
 
 # It's a demo of academic project, airline coupon exhange platform based on hyperledger fabric.
-You need request access to the LinuxONE Community Cloud, set up the webapp by scripts. Request access to LinuxONE Community Cloud, please refer to: https://linuxone.cloud.marist.edu/cloud/#/register?flag=vm
+#  java and docker are the basic requirements
+
 
 
 Usage:
@@ -9,12 +10,11 @@ Usage:
 
 To change the UI, please:
 
-1 cd scut/bonusPointsExchange
+1 git clone https://github.com/coupon-blockchain-bit/scut.git 
 
-2 modify the JSP files
+2 cd scut
 
-3 cd ../
+3 ./start
 
-4 ./build 
+4 check http://localhost:8080/bonusPointsExchange/ in the browser
 
-5 check the change on http://localhost:8080/bonusPointsExchange/ in the browser
