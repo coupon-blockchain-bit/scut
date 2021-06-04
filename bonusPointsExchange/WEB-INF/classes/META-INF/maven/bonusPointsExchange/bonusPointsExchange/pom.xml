@@ -16,7 +16,7 @@
 		<grpc.version>1.13.2</grpc.version><!-- CURRENT_GRPC_VERSION -->
 		<protobuf.version>3.6.0</protobuf.version>
 		<bouncycastle.version>1.60</bouncycastle.version>
-		<httpclient.version>4.5.6</httpclient.version>
+		<httpclient.version>4.5.13</httpclient.version>
 		<skipITs>true</skipITs>
 		<alpn-boot-version>8.1.7.v20160121</alpn-boot-version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
